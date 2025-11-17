@@ -1,3 +1,4 @@
+/* ========== Global Styles ========== */
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
     background: #f3f6f9;
@@ -13,16 +14,19 @@ body {
     box-shadow: 0 6px 24px rgba(10, 15, 25, 0.06);
 }
 
+/* ========== Headings ========== */
 h1 {
     margin: 0 0 12px 0;
 }
 
+/* ========== Layout Sections ========== */
 .add,
 .summary,
 .transactions {
     margin-top: 18px;
 }
 
+/* ========== Transaction Form ========== */
 .tx-form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -53,6 +57,7 @@ h1 {
     cursor: pointer;
 }
 
+/* ========== Summary Cards ========== */
 .summary-cards {
     display: flex;
     gap: 10px;
@@ -67,11 +72,13 @@ h1 {
     text-align: center;
 }
 
+/* ========== Export Button ========== */
 .export {
     display: inline-block;
     margin-bottom: 8px;
 }
 
+/* ========== Table ========== */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -89,6 +96,7 @@ table tbody td {
     border-bottom: 1px solid #f1f5f9;
 }
 
+/* Delete button */
 button[type="submit"] {
     padding: 6px 8px;
     border-radius: 6px;
@@ -98,12 +106,14 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+/* ========== Footer ========== */
 footer {
     margin-top: 18px;
     color: #64748b;
     font-size: 13px;
 }
 
+/* ========== Chart Fix (Prevents Infinite Page Growth) ========== */
 canvas {
     max-height: 300px;
     display: block;
