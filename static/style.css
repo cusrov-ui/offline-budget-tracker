@@ -1,0 +1,110 @@
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    background: #f3f6f9;
+    color: #071224;
+}
+
+.container {
+    max-width: 980px;
+    margin: 28px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(10, 15, 25, 0.06);
+}
+
+h1 {
+    margin: 0 0 12px 0;
+}
+
+.add,
+.summary,
+.transactions {
+    margin-top: 18px;
+}
+
+.tx-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+    align-items: end;
+}
+
+.tx-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.tx-form input,
+.tx-form select {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.tx-form button {
+    grid-column: 1 / -1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+.summary-cards {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.card {
+    flex: 1;
+    padding: 12px;
+    background: #f8fafc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.export {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+
+table thead th {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #e6eef8;
+}
+
+table tbody td {
+    padding: 8px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+button[type="submit"] {
+    padding: 6px 8px;
+    border-radius: 6px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 18px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+canvas {
+    max-height: 300px;
+    display: block;
+}
